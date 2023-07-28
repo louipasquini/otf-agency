@@ -1,16 +1,46 @@
 :root {
-    --primary-color: blueviolet;
-    --secondary-color: white;
+    --bright-purple: #48127e;
+    --off-white: #f5f0fd;
+    --grey: #b3b3b3;
+    --black: #070707;
+    --dark-purple: #290069;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 body {
     margin: 0;
     padding: 0;
+    height: 1000px;
     display: flex;
     justify-content: center;
-    background-image: url(./fundo.jpg);
-    background-size:cover;
-    font-family: Helvetica;
+    font-family: 'Open Sans', sans-serif;
+    background: 
+        radial-gradient(ellipse at left bottom, var(--grey) 0%, transparent 45%) left bottom,
+        radial-gradient(ellipse at right top, var(--off-white) 0%, transparent 45%) right top,
+        radial-gradient(circle at right bottom, var(--dark-purple) 30%, transparent 70%) right bottom,
+        radial-gradient(circle at left top, var(--bright-purple) 50%, var(--dark-purple) 100%) left top;
+    background-size: 110% 110%;
+
+    -webkit-animation: AnimationName 10s ease-in-out infinite;
+    -moz-animation: AnimationName 10s ease-in-out infinite;
+    animation: AnimationName 10s ease-in-out infinite;
+}
+
+ @-webkit-keyframes AnimationName {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
 }
 
 .feed {
@@ -30,7 +60,16 @@ body {
 }
 
 .navbar > button > svg {
-    width: 60px;
+    margin: -30px;
+    color: var(--off-white);
+    width: 100px;
+    fill: var(--off-white);
+    transition: all 0.2s ease-in-out;
+    background: radial-gradient(circle at center, var(--offwhite) 0%, transparent 0%);
+}
+
+.navbar > button > svg:hover {
+    fill: var(--grey);
 }
 
 .navbar > button {
@@ -42,22 +81,27 @@ body {
 }
 
 .menu {
-    color: var(--secondary-color);
+    color: var(--off-white);
     background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu:hover {
+    color: var(--grey)
 }
 
 .contato {
     width: 120px;
     height: 50px;
     border-radius: 25px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--off-white);
+    color: var(--bright-purple);
     transition: all 0.2s ease-in-out;
 }
 
 .contato:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--dark-purple);
+    color: var(--off-white);
 }
 
 .home {
@@ -74,20 +118,20 @@ body {
 }
 
 .leftHome > h1 {
-    font-size: 6dvw;
-    padding-right: 100px;
+    font-size: 5dvw;
+    padding-right: 200px;
     margin: 0;
     margin-bottom: 30px;
     line-height: 110px;
-    color: var(--secondary-color);
+    color: var(--off-white);
 }
 
 .leftHome > h4 {
-    font-size: 2dvw;
+    font-size: 20pt;
     font-weight: 200;
-    padding-right: 100px;
+    padding-right: 200px;
     margin: 0;
-    color: var(--secondary-color);
+    color: var(--off-white);
 }
 
 .rightHome {
