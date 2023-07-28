@@ -20,7 +20,7 @@ body {
         radial-gradient(ellipse at right top, var(--off-white) 0%, transparent 45%) right top,
         radial-gradient(circle at right bottom, var(--dark-purple) 30%, transparent 70%) right bottom,
         radial-gradient(circle at left top, var(--bright-purple) 50%, var(--dark-purple) 100%) left top;
-    background-size: 110% 110%;
+    background-size: 120% 120%;
 
     -webkit-animation: AnimationName 10s ease-in-out infinite;
     -moz-animation: AnimationName 10s ease-in-out infinite;
@@ -49,6 +49,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .navbar {
@@ -145,3 +146,91 @@ body {
 .rightHome > img {
     width: 500px;
 }
+
+.fazemos{
+    width: 125%;
+    height: 1000px;
+    margin-top: 100px;
+    background-color: var(--off-white);
+    border-radius: 60px;
+    display: flex;
+}
+
+.leftfazemos {
+    margin-top: -80px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 200px;
+}
+
+.leftfazemos > h1 {
+    font-size: 100px;
+    color: var(--bright-purple);
+    font-weight: 400;
+    margin: 0;
+}
+.leftfazemos > h2 {
+    font-size: 100px;
+    color: var(--bright-purple);
+    font-weight: 600;
+    margin: 0;
+}
+
+.rightfazemos {
+    margin-top: -80px;
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+}
+
+.opcoes {
+    max-width: 100%;
+    display: flex;
+    margin: 0;
+}
+
+.opcoes > p {
+    color: var(--grey);
+    font-size: 30pt;
+    font-weight: 200;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.opcoes > button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    align-self: center;
+    position: absolute;
+    transform: translateX(470px);
+}
+
+.opcoes > button > svg {
+    width: 30px;
+    height: 30px;
+    color: var(--dark-purple);
+}
+
+.rightfazemos > hr {
+    margin: 0;
+    width: 500px;
+    color: var(--dark-purple);
+}
+
+.cases {
+    width: 125%;
+    height: 1000px;
+    margin-top: -100px;
+    background-color: var(--bright-purple);
+    border-radius: 60px;
+    display: flex;
+}
+
