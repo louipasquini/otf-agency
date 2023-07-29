@@ -125,6 +125,8 @@ body {
     margin-bottom: 30px;
     line-height: 110px;
     color: var(--off-white);
+    letter-spacing: -2px;
+    word-spacing: -2px;
 }
 
 .leftHome > h4 {
@@ -423,14 +425,62 @@ body {
     background-color: var(--off-white);
     border-radius: 60px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .leftmarcas {
-    width: 50%;
+    width: 40%;
     height: 100%;
+    margin-top: -80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 220px;
+}
+
+.rightmarcas {
+    width: 60%;
+    height: 100%;
     margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 180px;
+}
+
+.rightmarcas > div > div {
+    margin: 20px;
+    width: 300px;
+    height: 150px;
+    background-color: var(--grey);
+}
+
+.leftmarcas > h1 {
+    color: var(--bright-purple);
+    font-size: 60pt;
+    margin: 0;
+    font-weight: 400;
+}
+
+.scrollmenu {
+    transform: translate(140vh,40vh);
+    position: fixed;
+}
+
+.scroll {
+    width: 10px;
+    height: 25px;
+    background-color: var(--dark-purple);
+    position: fixed;
+    border-radius: 5px;
+    transform: translate(140vh,40vh);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrollmenu > div {
+    margin: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--dark-purple);
 }
