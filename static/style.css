@@ -502,6 +502,135 @@ body {
     background-color: var(--dark-purple);
 }
 
+.entrarcontato {
+    width: 125%;
+    height: 1000px;
+    border-radius: 60px;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: 
+        radial-gradient(ellipse at right top, var(--dark-purple) 20%, var(--bright-purple) 40%, transparent 70%) right top,
+        linear-gradient(to right, var(--dark-purple) 0%, var(--bright-purple) 40%, transparent 60%) left,
+        radial-gradient(ellipse at right bottom, var(--grey) 0%, var(--bright-purple) 100%) right bottom;
+    background-size: 120% 120%;
+
+    -webkit-animation: AnimationName 10s ease-in-out infinite;
+    -moz-animation: AnimationName 10s ease-in-out infinite;
+    animation: AnimationName 10s ease-in-out infinite;
+}
+
+.entrarcontato > div {
+    width: 60%;
+    height: 60%;
+    margin-top: -80px;
+}
+
+.entrarcontato > div > h1 {
+    color: var(--off-white);
+    font-size: 3dvw;
+    margin: 0;
+    font-weight: 600;
+}
+
+.entrarcontato > div > h2 {
+    color: var(--off-white);
+    font-size: 2dvw;
+    margin: 0;
+    font-weight: 200;
+}
+
+.infos {
+    width: 100%;
+    display: flex;
+}
+
+.leftinfos {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+}
+
+.leftinfos > input {
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    color: var(--off-white);
+    border-bottom: 1px solid var(--off-white);
+    outline: none;
+    font-size: 1.5dvw;
+    font-weight: 200;
+    margin-top: 40px;
+}
+
+.rightinfos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+.rightinfos > input {
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    color: var(--off-white);
+    border-bottom: 1px solid var(--off-white);
+    outline: none;
+    font-size: 1.5dvw;
+    font-weight: 200;
+    margin-top: 40px;
+}
+
+.mensagem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.mensagem > input {
+    width: 99.5%;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    color: var(--off-white);
+    border-bottom: 1px solid var(--off-white);
+    outline: none;
+    font-size: 1.5dvw;
+    font-weight: 200;
+    margin-top: 40px;
+}
+
+.mensagem > button {
+    width: 150px;
+    height: 60px;
+    margin-top: 45px;
+    border: none;
+    outline: none;
+    background-color: var(--off-white);
+    color: var(--bright-purple);
+    font-size: 20pt;
+    border-radius: 8px;
+    transition: all 0.1s ease-in-out;
+}
+
+.mensagem > button:hover {
+    background-color: var(--dark-purple);
+    color: var(--off-white);
+}
+
+footer {
+    width: 125%;
+    height: 600px;
+    background-color: var(--black);
+    margin-top: -100px;
+}
+
 @media screen and (max-width: 900px) {
     .feed {
         width: 80vw;
